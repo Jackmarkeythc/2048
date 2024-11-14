@@ -1,0 +1,43 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #faf8ef;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.game-container {
+    text-align: center;
+}
+
+.score-board {
+    margin-bottom: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-rows: repeat(4, 80px);
+    grid-template-columns: repeat(4, 80px);
+    gap: 10px;
+    background-color: #bbada0;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.tile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 3px;
+    transition: transform 0.1s ease;
+    color: #776e65;
+}
+
+.tile[data-value="2"] { background-color: #eee4da; }
+.tile[data-value="4"] { background-color: #ede0c8; }
+.tile[data-value="8"] { background-color: #f2b179; color: #f9f6f2; }
+/* Add more styles for higher values */
